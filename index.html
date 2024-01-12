@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Page</title>
+    <link rel="stylesheet" href="./tailwindstyle.css">
+</head>
+<body>
+
+    <!--The logo-->
+    <div class="flex container justify-center">
+        <img src="./img/IMG-20240110-WA0010.jpg" alt="ciperport" class="h-auto max-w-64 flex">
+    </div>
+   
+    <!--The Form Section-->
+    <form id="myForm" class="p-5">
+        <div class="grid gap-6 mb-6 md:grid-cols-2">
+            <!--First Name input field-->
+            <div>
+                <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required>
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+            </div>
+
+            <!--Last Name input field-->
+            <div>
+                <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required>
+                <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
+            </div> 
+
+            <!--Email input field-->
+            <div class="mb-6">
+                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@gmail.com" required>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+            </div>  
+
+            <!--Phone Number input field-->
+            <div>
+                <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" required>
+                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+            </div>
+
+            <!--Date-->
+            <label class="block">
+                <input id="date" type="date" class=" block py-3 text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full" required />
+                <span class=" mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of Birth</span>
+              </label>
+
+              <!--Radio Button-->
+              <div class="flex items-start mb-6">
+                <div class="flex items-center me-4">
+                    <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" required>
+                    <label for="inline-radio" class="py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Male</label>
+                </div>
+                <div class="flex items-center me-4">
+                    <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" required>
+                    <label for="inline-2-radio" class="py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Female</label>
+                </div>
+                </div>
+
+                <!--The Stack Section-->
+                <select id="select" class="bg-gray-50 border border-gray-300 text-gray-900 text-base font-bold rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                  <option selected>Choose a Stack</option>
+                  <option required>Front-End Development</option>
+                  <option required>Back-End Development</option>
+                  <option required>Full Stack Development</option>
+                  <option required>Mobile Development</option>
+                </select>
+            </div>
+        </div>
+
+        <!--The Guidance Information Form-->
+        <div>
+            <h3 class="my-5 text-center font-bold text-2xl">Guidance Information</h3>
+
+            <!--Full Name input field-->
+            <div>
+                <input type="text" id="full_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required>
+                <label for="full_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full name</label>
+            </div>
+
+            <!--Relationship input field-->
+            <div>
+                <input type="text" id="relationship" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Relationship" required>
+                <label for="relationship" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Relationship</label>
+            </div> 
+
+            <!-- Guidance Email input field-->
+            <div class="mb-6">
+                <input type="email" id="email-2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@gmail.com" required>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+            </div>
+            
+            <!-- Guidance Phone Number input field-->
+            <div>
+                <input type="tel" id="phone-2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" required>
+                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+            </div>  
+        </div>
+
+        <!--The Form Submit Button-->
+        <div class="flex container justify-center">
+        <button type="submit" class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Enroll Now</button>
+        </div>
+    </form>
+</body>
+<script src="./script.js"></script>
+</html>
